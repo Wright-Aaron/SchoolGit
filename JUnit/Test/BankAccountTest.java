@@ -38,8 +38,8 @@ class BankAccountTest {
     //Here are some ways to use the assertEquals method.
     @org.junit.jupiter.api.Test
     public void deposite() {
-        double balance = account.deposite(200.00, false);
-        assertEquals(1200.00, account.getBalance(), 0);
+        double balance = account.deposite(201.00, false);
+        assertEquals(1200.00, balance, 2);
     }
 
     @org.junit.jupiter.api.Test

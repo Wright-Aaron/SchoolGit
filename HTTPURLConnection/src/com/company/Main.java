@@ -20,7 +20,7 @@ public class Main {
         StringBuffer responseContent = new StringBuffer();
 
         try {
-            URL url = new URL("http://wright-aaron.github.io/home.html");
+            URL url = new URL("http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=e13503e22a461e9043203aaf017f9f1d");
 
             System.out.println("Initiating connection with " + url);
             connection = (HttpURLConnection) url.openConnection();

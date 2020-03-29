@@ -10,7 +10,7 @@ public class Threads implements Runnable {
     private int rand;
     private int index;
     AtomicInteger value = new AtomicInteger(0);
-    private int binarycalc;
+    private int binaryCalc;
 
     Random random = new Random();
 
@@ -26,8 +26,8 @@ public class Threads implements Runnable {
     public void run() {
         System.out.println("\n\nExecuting " + thread + "Sleep between prints = " + sleep);
         for (int count = 1; count < rand; count++) {
-            binarycalc = random.nextInt(100);
-            if (binarycalc % 2 == 0) {
+            binaryCalc = random.nextInt(100);
+            if (binaryCalc % 2 == 0) {
                 value.incrementAndGet();
                 String output = thread.substring(0,index) + "0" + thread.substring(index+1);
                 System.out.print(output + "\n");
@@ -48,6 +48,6 @@ public class Threads implements Runnable {
                 }
             }
         }
-        System.out.println(thread + "This thread printed " + value + " times");
+        System.out.println(thread + " This thread printed " + value + " times");
     }
 }

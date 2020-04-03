@@ -1,0 +1,40 @@
+body {
+    font-size: 16px;
+    color: white;
+    background-color: rgb(0, 126, 119);;
+}
+
+main {
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Baskervville', serif;
+}
+
+h2 {
+    border-bottom: solid black;
+    margin-bottom: 8px;
+}
+
+div {
+    margin: 0.5rem;
+    border: 2.5px inset rgb(167, 167, 167);
+    padding: 0 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
